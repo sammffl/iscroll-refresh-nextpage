@@ -1,0 +1,22 @@
+{
+  "name": "iscroll-refresh-nextpage",
+  "version": "1.0.0",
+  "description": "在iscroll 5的基础上增加下拉刷新以及上拉加载更多的功能",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammffl/iscroll-refresh-nextpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sammffl/iscroll-refresh-nextpage/issues"
+  },
+  "homepage": "https://github.com/sammffl/iscroll-refresh-nextpage#readme",
+  "dependencies": {
+    "zepto": "^1.2.0"
+  }
+}

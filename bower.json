@@ -1,0 +1,20 @@
+{
+  "name": "iscroll-refresh-nextpage",
+  "homepage": "https://github.com/sammffl/iscroll-refresh-nextpage",
+  "authors": [
+    "sammffl"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iscroll": "^5.2.0"
+  }
+}

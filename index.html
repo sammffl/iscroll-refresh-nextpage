@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>iScroll Refresh nextPage</title>
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="author" content="Sam.Shen">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-title" content="iscroll-refresh-nextpage">
+    <link rel="stylesheet" href="static/index.css">
+</head>
+<body>
+<div id="wrapper">
+    <div id="scroller">
+        <div class="pull-down" id="refresh">
+            <i class="pull-down-icon"></i>
+            <label class="pull-down-label">刷新...</label>
+        </div>
+        <ul>
+            <li>Pretty row 1</li>
+            <li>Pretty row 2</li>
+            <li>Pretty row 3</li>
+            <li>Pretty row 4</li>
+            <li>Pretty row 5</li>
+            <li>Pretty row 6</li>
+            <li>Pretty row 7</li>
+            <li>Pretty row 8</li>
+            <li>Pretty row 9</li>
+            <li>Pretty row 10</li>
+            <li>Pretty row 11</li>
+            <li>Pretty row 12</li>
+            <li>Pretty row 13</li>
+            <li>Pretty row 14</li>
+            <li>Pretty row 15</li>
+            <li>Pretty row 16</li>
+            <li>Pretty row 17</li>
+            <li>Pretty row 18</li>
+            <li>Pretty row 19</li>
+            <li>Pretty row 20</li>
+            <li>Pretty row 21</li>
+            <li>Pretty row 22</li>
+            <li>Pretty row 23</li>
+            <li>Pretty row 24</li>
+            <li>Pretty row 25</li>
+            <li>Pretty row 26</li>
+            <li>Pretty row 27</li>
+            <li>Pretty row 28</li>
+            <li>Pretty row 29</li>
+            <li>Pretty row 30</li>
+            <li>Pretty row 31</li>
+            <li>Pretty row 32</li>
+            <li>Pretty row 33</li>
+            <li>Pretty row 34</li>
+            <li>Pretty row 35</li>
+            <li>Pretty row 36</li>
+            <li>Pretty row 37</li>
+            <li>Pretty row 38</li>
+            <li>Pretty row 39</li>
+            <li>Pretty row 40</li>
+            <li>Pretty row 41</li>
+            <li>Pretty row 42</li>
+            <li>Pretty row 43</li>
+            <li>Pretty row 44</li>
+            <li>Pretty row 45</li>
+            <li>Pretty row 46</li>
+            <li>Pretty row 47</li>
+            <li>Pretty row 48</li>
+            <li>Pretty row 49</li>
+            <li>Pretty row 50</li>
+        </ul>
+        <div class="pull-up" id="loadMore">
+            <i class="pull-up-icon"></i>
+            <label class="pull-up-label">加载更多</label>
+        </div>
+    </div>
+</div>
+<script src="bower_components/iscroll/build/iscroll-probe.js"></script>
+<script src="node_modules/zepto/dist/zepto.min.js"></script>
+<script>
+
+    var y1 = 0, y2 = 0;
+    myScroll = new IScroll('#wrapper', {
+        mouseWheel: true,
+        probeType: 3,
+//        startY: -200,
+
+    });
+
+    function updatePosition1() {
+
+        y1 = this.y >> 0
+        if (y1 > 40) {
+//                console.log('刷新');
+        }
+//            console.log(this);
+    }
+
+    function updatePosition2() {
+
+        y2 = this.y >> 0
+        if (y2 > 40) {
+//                console.log('刷新');
+        }
+//            console.log(this);
+    }
+
+    myScroll.on('scroll', updatePosition1);
+    myScroll.on('scrollEnd', updatePosition2);
+    console.dir(myScroll.options);
+    document.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+    }, false);
+
+</script>
+</body>
+</html>
