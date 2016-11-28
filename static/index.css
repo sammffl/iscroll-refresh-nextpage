@@ -91,8 +91,8 @@ body {
 
 #scroller li {
     padding: 0 10px;
-    height: 40px;
-    line-height: 40px;
+    height: 200px;
+    line-height: 200px;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #fff;
     background-color: #fafafa;
@@ -109,6 +109,7 @@ body {
     font-size: 14px;
     color: #fff;
     position: absolute;
+    /*text-align: center;*/
 }
 
 .pull-down {
